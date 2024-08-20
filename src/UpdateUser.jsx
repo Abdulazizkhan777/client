@@ -12,7 +12,7 @@ function UpdateUser()
 
   useEffect(()=>
       {
-        axios.get("http://localhost:3001/getUser/"+id)
+        axios.get("https://crud-server-ruby-alpha.vercel.app/getUser/"+id)
          .then(result=>{console.log(result)
           setemployeename(result.data.employeename)
           setemployeeemail(result.data.employeeemail)
