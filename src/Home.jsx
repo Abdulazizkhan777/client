@@ -5,7 +5,7 @@ function Home()
   axios.defaults.withCredentials = true;
   useEffect(()=>
   {
-    axios.get("http://localhost:3001/home")
+    axios.get("https://crud-server-ruby-alpha.vercel.app//home")
     .then(result=>{console.log(result)
       if(result !=="Success")
       {
