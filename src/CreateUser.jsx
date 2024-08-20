@@ -11,7 +11,7 @@ function CreateUser() {
 
   const submit=(e)=>{
     e.preventDefault()
-    axios.post("http://localhost:3001/create",{employeename,employeeemail,age})
+    axios.post("https://crud-server-ruby-alpha.vercel.app//create",{employeename,employeeemail,age})
     .then(result=>{
       console.log(result)
       navigate("/users")
